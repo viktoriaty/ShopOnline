@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="timer.js"></script>
+  <title>Document</title>
+</head>
+<body onload="time()">
+
+  <header class="header">
+    <div class="container header__container">
+      <img class="header__logo" src="images/logo.svg" alt="логотип">
+      
+      <a class="header__menu" href=""><img class="header__menu_foto" src="images/btn.svg" alt="меню"></a>
+      
+      <form class="header__search" action="">
+        <input class="header__input" type="text" value="Я ищу...">
+        <button class="header__button"><img class="header__button_foto" src="images/btn_search.svg" alt=""></button>
+      </form>
+      
+      <ul class="header__list">
+        <li class="header__item" >
+          <a class="header__item_link"><img class="header__item_foto" src="images/Vector.svg" alt="" width="36" height="36"></a>
+          <span class="header__item_text">Профиль</span>
+        </li>
+        <li class="header__item" >
+          <a class="header__item_link"><img class="header__item_foto" src="images/Vector (1).svg" alt="" width="36" height="36"></a>
+          <span class="header__item_text" >Корзина</span>
+        </li>
+        <li class="header__item">
+          <a class="header__item_link"><img  class="header__item_foto" src="images/Vector (2).svg" alt="" width="36" height="36"></a>
+          <span class="header__item_text">Избранное</span>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+    <ul class="main-block">
+      <li class="main-block__item-01">
+        <img class="block__foto" src="images/banner.jpg" alt="">
+        <span class="main-block__text-01">-50% на все ноутбуки</span>
+        <span class="main-block__text-02">До конца акции:</span>
+        <span class="main-block__timer" id="t"></span>
+
+      </li>
+      <li class="main-block__item-02">
+        <ul class="first-block">
+          <li class="first-block__item-01">
+            <img class="block__foto" src="images/Rectangle 101.jpg" alt="">
+            <span class="first-block__text-01 bold">Книга -</span>
+            <span class="first-block__text-11 normal"> лучший подарок</span>
+          </li>
+          <li class="first-block__item-02">
+            <img class="block__foto" src="images/Rectangle 102.jpg" alt="">
+            <span class="first-block__text-02 bold">Время скидок:</span>
+            <span class="first-block__percent-02 percent bold">-25%</span>
+          </li>
+          <li class="first-block__item-03">
+            <img class="block__foto"  src="images/Rectangle 104.jpg" alt="">
+            <span class="first-block__percent-03 percent bold">-40%</span>
+          </li>
+        </ul>
+      </li>
+      <li class="main-block__item-03">
+        <img class="block__foto" src="images/Rectangle 99.jpg" alt="">
+          <div class="main-block__text-03">
+            <span class="normal">Вторая пара кроссовок </span>
+            <span class="bold">в подарок!</span>
+        </div>
+      </li>
+      <li class="main-block__item-04">
+        <ul class="second-block">
+          <li class="second-block__item-01">
+            <img class="block__foto" src="images/Rectangle 100.jpg" alt="">
+            <span class="second-block__text-01 bold">Идеи новогодних подарков</span>
+          </li>
+          <li class="second-block__item-02">
+            <img class="block__foto" src="images/Rectangle 103.jpg" alt="">
+            <span class="second-block__text-02 bold">Выгодно в декаьре!</span>
+            <span class="second-block__percent-02 percent bold">-15%</span>
+          </li>
+        </ul>
+      </li>
+      <li class="main-block__item-05">
+        <img class="block__foto" src="images/Rectangle 105.jpg" alt="">
+        <span class="main-block__text-05 bold">новогодние украшения</span>
+      </li>
+      <li class="main-block__item-06">
+        <ul class="third-block">
+          <li class="third-block__item-01">
+            <img class="block__foto" src="images/Rectangle 106.jpg" alt="">
+            <span class="third-block__percent-01 percent">-55%</span>
+          </li>
+          <li class="third-block__item-02">
+            <img class="block__foto" src="images/Rectangle 107.jpg" alt="">
+            <span class="third-block__text">На бытовую химию</span>
+            <span class="third-block__percent-02 percent">-25%</span>
+          </li>
+          <li class="third-block__item-03"><img class="block__foto" src="images/Rectangle 108.jpg" alt=""></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  </main>
+</body>
+</html>
