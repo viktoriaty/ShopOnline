@@ -22,6 +22,7 @@
 html {
   position: relative;
   box-sizing: border-box;
+  
 }
 
 *,
@@ -78,7 +79,11 @@ fieldset {
   transform: scale(0);
 }
 
-
+.container {
+  max-width: 1830px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
 
 
 .block__foto {
@@ -87,12 +92,6 @@ fieldset {
   height: 100%;
   object-fit: cover;
   border-radius: 20px;
-}
-
-.container {
-  width: 1830px;
-  padding: 0 30px;
-  margin: 0 auto;
 }
 
 .bold {
@@ -104,6 +103,8 @@ fieldset {
 }
 
 .percent {
+  width: 88px;
+  height: 88px;
   border-radius: 50%;
   background-color: #FFBD13;
   padding: 24px 9px;
@@ -189,7 +190,6 @@ fieldset {
     "block11 block12"
     "block13 block13";
     color:#FFFFFF;
-    
 
 }
 
@@ -236,8 +236,8 @@ fieldset {
 
 .first-block__percent-02 {
   position: absolute;
-  top: 147px;
-  left: 137px;
+  bottom: 20px;
+  right: 20px;
  }
 
 .first-block__percent-03 {
@@ -261,6 +261,7 @@ fieldset {
 
 .second-block {
   display: grid;
+  grid-template-rows: 245px 245px;
   gap: 60px;
   font-size: 40px;
   line-height: 130%;
@@ -290,8 +291,8 @@ fieldset {
 
 .second-block__percent-02 {
   position: absolute;
-  top: 137px;
-  left: 442px;
+  bottom: 20px;
+  right: 20px;
 }
 
 .main-block__item-05 {
@@ -314,7 +315,7 @@ fieldset {
 .third-block {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 245px 245px;
   gap: 60px;
   grid-template-areas: 
   "block31 block32"
@@ -338,8 +339,8 @@ fieldset {
 
 .third-block__percent-01 {
   position: absolute;
-  top: 442px;
-  left: 137px;
+  bottom: 20px;
+  right: 20px;
 }
 
 .third-block__text {
@@ -356,13 +357,19 @@ fieldset {
   left: 20px;
 }
 
+
+
 @media (max-width:1024px) {
 
   .container {
-    width: 1000px;
+    max-width: 1000px;
   }
 
-   .main-block {
+  .block__foto {
+    border-radius: 16px;
+  }
+
+  .main-block {
     
     grid-template-columns: 458px 458px;
     grid-template-rows: 314px 458px 458px 418px;
@@ -500,10 +507,17 @@ fieldset {
 
 @media (max-width:768px) {
   .container {
-    width: 760px;
+    max-width: 760px;
   }
 
+  
+  .block__foto {
+    border-radius: 12px;
+   }
+
   .percent {
+    width: 50px;
+    height: 50px;
     padding: 15px 6px;
     font-size: 16px;
   }
@@ -647,9 +661,14 @@ fieldset {
 
 @media (max-width: 320px){
   .container {
-    width: 320px;
+    max-width: 320px;
     padding: 0 20px;
   }
+
+  
+  .block__foto {
+    border-radius: 8px;
+   }
 
   .main-block {
     
