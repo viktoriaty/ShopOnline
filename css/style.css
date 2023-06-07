@@ -156,17 +156,18 @@ fieldset {
   line-height: 130%;
   color:#FFFFFF;
   position: absolute;
-  top: 145px;
-  left:112px;
+  top: 30%;
+  left: 6%;
 }
 
 .main-block__text-02 {
+  object-fit: cover;
   font-weight: 700;
   font-size: 16px;
   line-height: 130%;
   position: absolute;
-  top: 336px;
-  left: 823px;
+  bottom: 24% ;
+  right: 46%;
   color:#FFFFFF;
 }
 
@@ -175,8 +176,10 @@ fieldset {
   font-size: 60px;
   line-height: 130%;
   position: absolute;
-  top: 362px;
-  left: 649px;
+  bottom: 10%;
+  right: 28%;
+ 
+
   color:#FFFFFF;
 }
 
@@ -212,32 +215,32 @@ fieldset {
 
 .first-block__text-01 {
   position: absolute;
-  top: 97px;
-  left: 20px;
+  top: 39%;
+  left: 8%;
   font-size: 40px;
-    line-height: 130%;
+  line-height: 130%;
 }
 
 .first-block__text-11 {
   position: absolute;
-  top: 146px;
-  left: 20px;
+  top: 59%;
+  left:8%;
   font-size: 30px;
   line-height: 130%;
 }
 
 .first-block__text-02 {
   position: absolute;
-  top: 78px;
-  left: 14px;
+  top: 29%;
+  left: 5%;
   font-size: 30px;
     line-height: 130%;
 }
 
 .first-block__percent-02 {
   position: absolute;
-  bottom: 20px;
-  right: 20px;
+  bottom: 7%;
+  right: 7%;
  }
 
 .first-block__percent-03 {
@@ -248,7 +251,7 @@ fieldset {
 
 .main-block__text-03 {
   position: absolute;
-  top: 350px;
+  bottom: 22px;
   left: 20px;
   right: 20px;
   padding: 26px 24px;
@@ -285,14 +288,15 @@ fieldset {
 
 .second-block__text-02 {
   position: absolute;
-  top: 160px;
-  left: 30px;
+  bottom: 12%;
+  left: 4%;
+  right:16%;
 }
 
 .second-block__percent-02 {
   position: absolute;
-  bottom: 20px;
-  right: 20px;
+  bottom: 7%;
+  right: 4%;
 }
 
 .main-block__item-05 {
@@ -301,8 +305,9 @@ fieldset {
 
 .main-block__text-05 {
   position: absolute;
-  top: 385px;
-  left: 50px;
+  bottom: 9%;
+  left: 4%;
+  
   font-size: 40px;
   line-height: 120%;
   text-transform: uppercase;
@@ -345,8 +350,8 @@ fieldset {
 
 .third-block__text {
   position: absolute;
-  top: 147px;
-  left: 20px;
+  bottom: 8%;
+  left: 8%;
   font-size: 30px;
   line-height: 130%;
 }
@@ -357,9 +362,28 @@ fieldset {
   left: 20px;
 }
 
+@media (max-width:1600px) {
+  .first-block {
+    gap: 40px;
+  }
+
+  .main-block {
+    grid-template-rows: 480px 530px 530px;
+    gap: 40px;
+  }
+
+  .second-block {
+    gap: 40px;
+  }
+
+  .third-block {
+    gap: 40px;
+  }
 
 
-@media (max-width:1024px) {
+}
+
+@media (max-width:1300px) {
 
   .container {
     max-width: 1000px;
@@ -410,14 +434,14 @@ fieldset {
   }
 
   .main-block__text-02 {
-    top: 195px;
-    left: 409px;
+    bottom: 31%;
+    right: 43%;
   }
   
   .main-block__timer {
     font-size: 40px;
-    top: 226px;
-    left: 314px;
+    bottom: 11%;
+    right: 25%;
   }
 
   .first-block__text-01 {
@@ -471,13 +495,14 @@ fieldset {
   }
 
   .second-block__text-02 {
-    top: 158px;
+    bottom: 20px;
     left: 20px;
+    right: 15%;
   }
   
   .second-block__percent-02 {
-    top: 119px;
-    left: 360px;
+    bottom: 10px;
+    right: 10px;
   }
     
   .main-block__text-05 {
@@ -523,7 +548,6 @@ fieldset {
   }
 
   .main-block {
-    
     grid-template-columns: 300px 380px;
     grid-template-rows: 280px 380px 300px 337px;
     gap: 20px;
