@@ -113,6 +113,7 @@ fieldset {
 }
 
 .main-block {
+  padding-bottom: 90px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 480px 550px 550px;
